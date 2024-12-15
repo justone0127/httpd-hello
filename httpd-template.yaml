@@ -127,7 +127,7 @@ objects:
               port: 8080
           volumeMounts:
             - name: html-volume
-              mountPath: /usr/local/apache2/htdocs
+              mountPath: /usr/local/apache2/htdocs # /opt/app-root/src 로 바꿔서 가능한지 테스트 부탁 드립니다. 
         volumes:
         - name: html-volume
           persistentVolumeClaim:
